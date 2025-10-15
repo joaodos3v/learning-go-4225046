@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// colors := []string{"Red", "Green", "Blue"}
+	colors := []string{"Red", "Green", "Blue"}
 	// for i := 0; i < len(colors); i++ {
 	// 	println(colors[i])
 	// }
@@ -13,18 +13,20 @@ func main() {
 	// 	println(colors[i])
 	// }
 
-	// for _, color := range colors {
-	// 	println(color)
-	// }
+	for _, color := range colors {
+		println(color)
+	}
 
-	// states := make(map[string]string)
-	// states["WA"] = "Washington"
-	// states["OR"] = "Oregon"
-	// states["CA"] = "California"
-	// for state, _ := range states {
-	// 	println(states[state])
-	// }
+	states := make(map[string]string)
+	states["WA"] = "Washington"
+	states["OR"] = "Oregon"
+	states["CA"] = "California"
+	for state, _ := range states {
+		println(states[state])
+	}
 
+	
+	// Simulating while loop with for in Go
 	value := 0
 	sum := 0
 	for value < 5 {
@@ -34,6 +36,7 @@ func main() {
 		value++
 	}
 
+	// Demonstrating goto expression
 	sum = 1
 	for sum < 1000 {
 		sum += sum
